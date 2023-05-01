@@ -23,7 +23,7 @@ a {
 }
 
 .container {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -55,7 +55,9 @@ a {
   gap: 2rem;
   padding: 0 4em;
 }
-
+.bar-icon {
+  display: none;
+}
 .nav-items div {
   font-size: 20px;
   font-weight: 500;
@@ -706,4 +708,108 @@ footer {
 .icon-wrapper {
   display: flex;
   gap: 1rem;
+}
+@media (max-width: 1300px) {
+  #skills {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .skill-fade-text {
+    bottom: -21.6%;
+    right: 6%;
+  }
+  .skill-container-left {
+    width: 100%;
+  }
+  .skill-container-right {
+    width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  .hero-section-left {
+    text-align: center;
+    align-items: center;
+  }
+  .hero-section-right {
+    display: none;
+  }
+  .faded-text {
+    font-size: 6rem;
+    left: 0;
+    bottom: -20.7%;
+  }
+  .skills-logo {
+    width: 78px;
+  }
+  .contactus-sub-heading {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  .project-card {
+    height: 270px;
+  }
+}
+@media (max-width: 720px) {
+  .faded-text {
+    font-size: 5rem;
+    left: 1px;
+    bottom: -19.7%;
+  }
+  .nav-items {
+    display: none;
+  }
+  .bar-icon {
+    padding-right: 5%;
+    display: block;
+    cursor: pointer;
+  }
+  .navbar {
+    position: relative;
+  }
+  .nav-items div a {
+    color: white;
+  }
+  .nav-items.active {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 10%;
+    right: 7.5%;
+    width: 30%;
+    background-color: #1f1f1f9a;
+    z-index: 10;
+    padding: 5px 10px;
+  }
+}
+@media (max-width: 600px) {
+  .faded-text {
+    display: none;
+  }
+  .skill-fade-text {
+    display: none;
+  }
+  .footer-faded-text {
+    display: none;
+  }
+  .contactus-heading {
+    font-size: 4em;
+  }
+  .contactus-sub-heading {
+    font-size: 1.6rem;
+  }
+  footer {
+    padding: 2rem;
+  }
+  .footer-wrapper {
+    padding: 0 0;
+    flex-direction: column;
+  }
+  .skills-container {
+    padding: 2rem;
+  }
+  .skills-logo {
+    width: 40px;
+  }
 }
